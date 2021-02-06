@@ -1,0 +1,46 @@
+<div class="order-detail-wrapper">
+  <button type="button" class="btn btn-dark btn-sm mb-5" [routerLink]="['']">
+    Back to orders
+  </button>
+  <div class="jumbotron">
+    <h1 class="display-4 ml-0">{{ order.name }}</h1>
+    <p class="lead">
+      {{ order.address }}
+    </p>
+    <hr class="my-4" />
+    <h2 style="font-weight: 400">Ordered Items</h2>
+
+    <ul class="list-group">
+      <div *ngFor="let item of order.items">
+        <li class="list-group-item">
+          {{ item.number }} ✖ {{ item.item
+          }}<span class="float-right">{{ item.number * item.price }}</span>
+        </li>
+      </div>
+      <li class="list-group-item mb-4">
+        <strong>Total</strong
+        ><strong class="float-right">{{ getTotal(order) }}</strong>
+      </li>
+      <div *ngIf="order.orderStatus === 1">
+        <span class="h3">Status:</span>
+        <div class="badge badge-primary ml-auto float-right">
+          Order received
+        </div>
+      </div>
+      <div *ngIf="order.orderStatus === 2">
+        <span class="h3">Status:</span>
+        <div class="badge badge-secondary ml-auto float-right">Preparing</div>
+      </div>
+      <div *ngIf="order.orderStatus === 3">
+        <span class="h3">Status:</span>
+        <div class="badge badge-warning ml-auto float-right">
+          Ready to serve
+        </div>
+      </div>
+      <div *ngIf="order.orderStatus === 4">
+        <span class="h3">Status:</span>
+        <div class="badge badge-success ml-auto float-right">Served</div>
+      </div>
+    </ul>
+  </div>
+</div>

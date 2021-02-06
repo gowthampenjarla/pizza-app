@@ -1,0 +1,85 @@
+{
+    "status": "success",
+    "ordersList": [
+        {
+            "id": 1,
+            "name": "Gowtham",
+            "items": [
+                {
+                    "item": "Pizza",
+                    "number": 1,
+                    "price": 200
+                },
+                {
+                    "item": "Nuggets",
+                    "number": 1,
+                    "price": 300
+                },
+                {
+                    "item": "Fries",
+                    "number": 1,
+                    "price": 100
+                },
+                {
+                    "item": "Burger",
+                    "number": 1,
+                    "price": 150
+                }
+            ],
+            "itemsOrdered": "1",
+            "totalAmount": "200",
+            "orderStatus": 1,
+            "address": "22B, Bakers street, London"
+        },
+        {
+            "id": 2,
+            "name": "Shiva",
+            "items": [
+                {
+                    "item": "Pizza",
+                    "number": 2,
+                    "price": 200
+                },
+                {
+                    "item": "Burger",
+                    "number": 3,
+                    "price": 100
+                }
+            ],
+            "itemsOrdered": "5",
+            "totalAmount": "1000",
+            "orderStatus": 2,
+            "address": "10, Downing street, London"
+        },
+        {
+            "id": 3,
+            "name": "Venkat",
+            "items": [
+                {
+                    "item": "Fries",
+                    "number": 2,
+                    "price": 100
+                }
+            ],
+            "itemsOrdered": "2",
+            "totalAmount": "200",
+            "orderStatus": 3,
+            "address": "17 Cherry Tree Lane, London"
+        },
+        {
+            "id": 4,
+            "name": "Naveen",
+            "items": [
+                {
+                    "item": "Nuggets",
+                    "number": 1,
+                    "price": 300
+                }
+            ],
+            "itemsOrdered": "1",
+            "totalAmount": "200",
+            "orderStatus": 4,
+            "address": "32 Windsor Gardens, London"
+        }
+    ]
+}
